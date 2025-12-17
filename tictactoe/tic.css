@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Bungee+Tint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(ticimgs/background.jpg);
+  background-size: contain;
+}
+
+.card {
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  width: fit-content;
+  height: fit-content;
+}
+
+.wrapper {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+
+  height: 95vh;
+}
+
+.container {
+  height: 70vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Bungee Tint;
+  font-size: 48px;
+  margin-top: 50px;
+  color: brown;
+  padding: 10px 30px;
+}
+
+.game {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  gap: 0;
+}
+
+.box {
+  height: 33.2%;
+  width: 33.2%;
+  font-size: 8vmin;
+  color: brown;
+  background-color: white;
+  border: none;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.box:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.box:nth-child(3n) {
+  border-right: none;
+}
+
+.box:nth-child(n + 7) {
+  border-bottom: none;
+}
+
+.player-o {
+  color: #3b82f6;
+}
+
+.player-x {
+  color: #ef4444;
+}
+
+.bottom-buttons {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rebeccapurple;
+  color: palegreen;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: 600;
+}
+
+#reset-btn:hover {
+  background-color: palegreen;
+  color: rebeccapurple;
+}
+
+#bottom-menu-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rebeccapurple;
+  color: palegreen;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: 600;
+}
+
+#bottom-menu-btn:hover {
+  background-color: palegreen;
+  color: rebeccapurple;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rebeccapurple;
+  color: palegreen;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: 600;
+}
+
+#new-btn:hover {
+  background-color: palegreen;
+  color: rebeccapurple;
+}
+
+#menu-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rebeccapurple;
+  color: palegreen;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: 600;
+}
+
+#menu-btn:hover {
+  background-color: palegreen;
+  color: rebeccapurple;
+}
+
+.msg-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+#msg {
+  font-size: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: brown;
+}
+
+.hide {
+  display: none;
+}
